@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEB3 LOGAN | Hypemen & Visibility Expert</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #b91c1c; /* red text */
+    }
+    .motion-box {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+    }
+    .motion-box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="font-sans px-4 py-6 sm:px-6 md:px-20">
+
+  <!-- Header -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-extrabold">WEB3 LOGAN</h1>
+    <p class="text-lg text-gray-700"> Visibility Expert</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="motion-box bg-white p-6 rounded-xl shadow-xl max-w-3xl mx-auto text-center mb-10 border">
+    <h2 class="text-3xl font-bold mb-4">Boosting Web3 Visibility</h2>
+    <p class="text-md sm:text-lg font-medium text-gray-800">
+      I’m <strong class="text-red-700">WEB3 Logan</strong> — a crypto visibility expert partnered with multi-million market cap projects across <strong>SOL, XRP, ETH, BASE</strong> and more.
+    </p>
+    <div class="flex justify-center gap-6 mt-6 text-3xl text-red-600">
+      <i class="fab fa-ethereum"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-telegram"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="motion-box bg-white p-6 rounded-xl shadow-xl max-w-4xl mx-auto mb-10 border">
+    <h3 class="text-2xl font-bold mb-6 text-center">Services</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-800 font-medium">
+      <div class="p-4 bg-gray-50 rounded shadow">Elite Raid Team Management</div>
+      <div class="p-4 bg-gray-50 rounded shadow">Web3 Visibility & Hype</div>
+      <div class="p-4 bg-gray-50 rounded shadow">X (Twitter) Growth & Followers</div>
+      <div class="p-4 bg-gray-50 rounded shadow">Community Engagement</div>
+      <div class="p-4 bg-gray-50 rounded shadow">Telegram Strategy & 
+      Growth</div>
+      
+      <div class="p-4 bg-gray-50 rounded shadow">Influencer Network Coordination</div>
+     
+      <div class="p-4 bg-gray-50 rounded shadow">WEB Development</div>
+      
+
+      <div class="p-4 bg-gray-50 rounded shadow">Design</div>
+      
+      
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="motion-box bg-white p-6 rounded-xl shadow-xl max-w-3xl mx-auto text-center mb-10 border">
+    <h3 class="text-2xl font-bold mb-4">About Me</h3>
+    <p class="text-md sm:text-lg font-medium text-gray-800">
+      With years in the crypto game, I’ve scaled multiple projects into million-dollar tokens. Known for precision raids, viral momentum, and elite X (Twitter) hype. Platforms: <strong>SOL, XRP, ETH, MONAD, BASE</strong> and more.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="motion-box bg-white p-6 rounded-xl shadow-xl max-w-3xl mx-auto text-center mb-16 border">
+    <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
+    <p class="text-md sm:text-lg font-medium">DM me on Telegram: 
+      <a href="https://t.me/WEB3_DOCTOR01" class="underline text-red-600">@WEB3_DOCTOR01</a>
+    </p>
+  </section>
+
+  <!-- Follow on Twitter -->
+  <section class="motion-box text-center mb-12">
+    <a href="https://twitter.com/intent/follow?screen_name=web3logan" target="_blank"
+       class="inline-flex items-center gap-2 px-5 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition">
+      <i class="fab fa-x-twitter"></i> Follow @web3_l0gan
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-500 mt-10">
+    &copy; 2025 WEB3 LOGAN. All rights reserved.
+  </footer>
+
+  <!-- Reveal on scroll -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.motion-box').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
