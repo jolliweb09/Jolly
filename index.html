@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jolly - Taking Projects to Billions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffffff, #ffebee); /* White to light red gradient */
+      color: #ef4444; /* Bold red text */
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .motion-box {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.5s ease-out;
+    }
+
+    .motion-box.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section-card {
+      background: rgba(255, 255, 255, 0.95); /* Near-white with slight transparency */
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(239, 68, 68, 0.15); /* Subtle red shadow */
+      animation: glideIn 0.8s ease-out;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .service-card {
+      background: #fff3f3; /* Light red background */
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(239, 68, 68, 0.25);
+    }
+
+    .btn {
+      background: #ef4444; /* Vibrant red button */
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #dc2626;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .container { max-width: 800px; }
+      .section-card { padding: 1rem; }
+    }
+
+    @media (max-width: 640px) {
+      .container { max-width: 100%; padding: 0.5rem; }
+      .service-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 2.5rem; }
+    }
+
+    /* Animations */
+    @keyframes glideIn {
+      from { transform: translateY(20%) scale(0.95); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="text-center py-12 mb-8">
+    <div class="container">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-wide">Jolly</h1>
+      <p class="text-lg md:text-xl mt-2">Taking Projects to Billions</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="motion-box section-card container mb-8">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Elevate Your Web3 Empire</h2>
+    <p class="text-base md:text-lg text-gray-700">
+      I’m <strong>Jolly</strong>, a visibility expert scaling projects on <strong>SOL, XRP, ETH, BASE</strong>.
+    </p>
+    <div class="flex justify-center gap-4 mt-4 text-2xl text-ef4444">
+      <i class="fab fa-ethereum"></i>
+      <i class="fab fa-telegram"></i>
+    </div>
+    <a href="precision-trust.html" class="btn mt-4 inline-block">Learn More</a>
+  </section>
+
+  <!-- Services -->
+  <section class="motion-box section-card container mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Expert Solutions</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <h4 class="text-lg font-medium">Strategic Growth Unit</h4>
+        <p class="text-sm text-gray-600">Precision growth raids.</p>
+      </div>
+      <div class="service-card">
+        <h4 class="text-lg font-medium">Visibility Powerhouse</h4>
+        <p class="text-sm text-gray-600">Global exposure mastery.</p>
+      </div>
+      <div class="service-card">
+        <h4 class="text-lg font-medium">Social Momentum</h4>
+        <p class="text-sm text-gray-600">Twitter growth expertise.</p>
+      </div>
+      <div class="service-card">
+        <h4 class="text-lg font-medium">Community Catalyst</h4>
+        <p class="text-sm text-gray-600">Engagement leadership.</p>
+      </div>
+      <div class="service-card">
+        <h4 class="text-lg font-medium">Telegram Expansion</h4>
+        <p class="text-sm text-gray-600">Strategic growth solutions.</p>
+      </div>
+    </div>
+    <a href="#contact" class="btn mt-4 inline-block">Start Now</a>
+  </section>
+
+  <!-- Achievements -->
+  <section class="motion-box section-card container mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Milestone Victories</h3>
+    <p class="text-base md:text-lg text-gray-700">
+      Jolly has propelled projects to multi-million market caps, showcasing a legacy of success in the Web3 space.
+    </p>
+  </section>
+
+  <!-- Precision & Trust -->
+  <section id="precision" class="motion-box section-card container mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Precision & Trust</h3>
+    <p class="text-base md:text-lg text-gray-700">
+      Jolly delivers precision and trust with a proven track record. I’ve scaled projects to billions across <strong>SOL, XRP, ETH, BASE</strong> with strategic mastery and unwavering reliability.
+    </p>
+    <a href="precision-trust.html" class="btn mt-4 inline-block">Trust My Vision</a>
+  </section>
+
+  <!-- Vision -->
+  <section class="motion-box section-card container mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Our Vision</h3>
+    <p class="text-base md:text-lg text-gray-700">
+      Jolly aims to redefine Web3 by taking projects to billions, building a future of innovation and trust.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="motion-box section-card container mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-center">Connect with Me</h3>
+    <p class="text-base md:text-lg text-gray-700">
+      Ready to build your billion-dollar future? DM me now.
+    </p>
+    <a href="https://t.me/jolli_web6" class="btn mt-4 inline-block">jolli_web6</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-sm text-gray-600">
+    <div class="container">
+      © 2025 Jolly. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Reveal on Scroll -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('show');
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.motion-box').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
